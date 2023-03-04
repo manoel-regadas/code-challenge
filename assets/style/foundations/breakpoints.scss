@@ -1,0 +1,50 @@
+// Breakpoints - Media Queries
+$mobile: 361px; // From 360 to 768
+$xs: 769px; // From 360 to 768
+$s: 1025px; // From 1025 to 1366
+$m: 1367px; // From 1367 to 1600
+$l: 1601px; // From 1601 to 1920
+$xl: 1920px; // From 1921 to ++++
+
+
+@mixin mq($smallerValue, $biggerValue) {
+ @media (min-width: #{$smallerValue}) and (max-width: #{$biggerValue}) {
+  @content;
+ }
+}
+
+@mixin media-XS {
+  @media (min-width: #{$mobile}) {
+   @content;
+  }
+ }
+
+@mixin media-S {
+ @media (min-width: #{$xs}) {
+  @content;
+ }
+}
+
+@mixin media-M {
+ @media (min-width: #{$s}) {
+  @content;
+ }
+}
+
+@mixin media-L {
+ @media (min-width: #{$m}) {
+  @content;
+ }
+}
+
+@mixin media-XL {
+ @media (min-width: #{$l}) {
+  @content;
+ }
+}
+
+@mixin media-XXL {
+ @media (min-width: #{$xl}) {
+  @content;
+ }
+}

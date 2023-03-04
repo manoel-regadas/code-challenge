@@ -1,0 +1,69 @@
+@mixin icon-xs {
+ width: 16px;
+ height: 16px;
+
+ svg {
+  width: 16px;
+  height: 16px;
+ }
+}
+
+@mixin icon-s {
+ width: 24px;
+ height: 24px;
+
+ svg {
+  width: 24px;
+  height: 24px;
+ }
+}
+
+@mixin icon-m {
+ width: 32px;
+ height: 32px;
+
+ svg {
+  width: 32px;
+  height: 32px;
+ }
+}
+
+@mixin icon-l {
+ width: 48px;
+ height: 48px;
+
+ svg {
+  width: 48px;
+  height: 48px;
+ }
+}
+
+@mixin icon-xl {
+ width: 56px;
+ height: 56px;
+
+ svg {
+  width: 56px;
+  height: 56px;
+ }
+}
+
+@mixin icon-2xl {
+ width: 80px;
+ height: 80px;
+
+ svg {
+  width: 80px;
+  height: 80px;
+ }
+}
+
+@mixin icon-3xl {
+ width: 156px;
+ height: 156px;
+
+ svg {
+  width: 156px;
+  height: 156px;
+ }
+}

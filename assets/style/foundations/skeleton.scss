@@ -1,0 +1,99 @@
+@use './breakpoints.scss' as *;
+
+$spc-04: 0.25rem;
+$spc-08: 0.5rem;
+$spc-16: 1rem;
+$spc-24: 1.5rem;
+$spc-32: 2rem;
+$spc-40: 2.5rem;
+$spc-48: 3rem;
+$spc-56: 3.5rem;
+$spc-64: 4rem;
+$spc-72: 4.5rem;
+$spc-80: 5rem;
+$spc-88: 5.5rem;
+$spc-96: 6rem;
+$spc-120: 7.5rem;
+
+@mixin wrapper {
+ width: 100%;
+ max-width: 1732px;
+ margin: 0 auto;
+ padding: 0 $spc-24;
+
+ @include media-S {
+  padding: 0 $spc-32;
+ }
+
+ @include media-M {
+  padding: 0 $spc-56;
+ }
+
+ @include media-XL {
+  padding: 0 $spc-96;
+ }
+
+ @include media-XXL {
+  padding: 0 0;
+ }
+}
+
+@mixin grid {
+ @include wrapper;
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ grid-column-gap: $spc-16;
+
+ @include media-S {
+  grid-column-gap: $spc-16;
+ }
+
+ @include media-M {
+  grid-column-gap: $spc-24;
+  grid-template-columns: repeat(12, 1fr);
+ }
+
+ @include media-L {
+  grid-column-gap: $spc-32;
+ }
+}
+
+@mixin justGrid {
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ grid-column-gap: $spc-08;
+
+ @include media-S {
+  grid-column-gap: $spc-16;
+ }
+
+ @include media-M {
+  grid-column-gap: $spc-24;
+  grid-template-columns: repeat(12, 1fr);
+ }
+
+ @include media-L {
+  grid-column-gap: $spc-32;
+ }
+}
+
+@mixin justPadding {
+ width: 100%;
+ margin: 0 auto;
+ padding: 0 $spc-24;
+
+ @include media-S {
+  padding: 0 $spc-32;
+ }
+
+ @include media-M {
+  padding: 0 $spc-56;
+ }
+
+ @include media-XL {
+  padding: 0 $spc-96;
+ }
+ @include media-XXL {
+  padding: 0 0;
+ }
+}

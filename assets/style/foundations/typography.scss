@@ -1,0 +1,313 @@
+//@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;600&display=swap');
+@use './breakpoints.scss' as *;
+@use './skeleton.scss' as *;
+
+$font: 'Poppins', sans-serif;
+$text-font: 'Inter', sans-serif;
+
+@mixin fontFix {
+ font-style: normal;
+ text-rendering: optimizeLegibility;
+ font-smoothing: antialiased;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ font-stretch: normal;
+ letter-spacing: normal;
+}
+
+@mixin font-5xl {
+ @include fontFix;
+ font-family: $font;
+ font-size: 3.75rem;
+ line-height: 4.375rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 4.5rem;
+  line-height: 5.125rem;
+ }
+}
+
+@mixin font-4xl {
+ @include fontFix;
+ font-family: $font;
+ font-size: 2rem;
+ line-height: 2.5rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 3.75rem;
+  line-height: 4.375rem;
+ }
+}
+
+@mixin font-3xl {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.625rem;
+ line-height: 2.125rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 2.5rem;
+  line-height: 3rem;
+ }
+}
+
+@mixin font-3xl-2 {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.625rem;
+ line-height: 2.125rem;
+ letter-spacing: 0em;
+
+ @include media-M {
+  font-size: 2.5rem;
+  line-height: 3rem;
+ }
+}
+
+@mixin font-2xl {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.625rem;
+ line-height: 2.125rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 2rem;
+  line-height: 2.5rem;
+ }
+}
+
+@mixin font-2xl-2 {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.625rem;
+ line-height: 2.125rem;
+ letter-spacing: 0em;
+
+ @include media-M {
+  font-size: 2rem;
+  line-height: 2.5rem;
+ }
+}
+
+@mixin font-xl {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.375rem;
+ line-height: 1.875rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 1.625rem;
+  line-height: 2.125rem;
+ }
+}
+
+@mixin font-xl-2 {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.375rem;
+ line-height: 1.875rem;
+ letter-spacing: 0em;
+
+ @include media-M {
+  font-size: 1.625rem;
+  line-height: 2.125rem;
+ }
+}
+
+@mixin font-l {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.125rem;
+ line-height: 1.625rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+ }
+}
+
+@mixin font-l-2 {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.125rem;
+ line-height: 1.625rem;
+ letter-spacing: 0em;
+
+ @include media-M {
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+ }
+}
+
+@mixin font-l-3 {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 1.125rem;
+ line-height: 1.75rem;
+ letter-spacing: 0em;
+
+ strong {
+  font-weight: 600;
+ }
+
+ @include media-M {
+  font-size: 1.375rem;
+  line-height: 2rem;
+ }
+}
+
+@mixin font-l-4 {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 1.125rem;
+ line-height: 1.75rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 1.375rem;
+  line-height: 2rem;
+ }
+}
+
+@mixin font-m {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 1rem;
+ line-height: 1.625rem;
+ letter-spacing: 0em;
+
+ @include media-M {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+ }
+}
+
+@mixin font-m-2 {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 1rem;
+ line-height: 1.625rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+ }
+}
+
+@mixin font-m-3 {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.125rem;
+ line-height: 1.625rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+}
+
+@mixin font-m-4 {
+ @include fontFix;
+ font-family: $font;
+ font-size: 1.125rem;
+ line-height: 1.625rem;
+ letter-spacing: 0em;
+}
+
+@mixin font-s {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 0.875rem;
+ line-height: 1.375rem;
+ letter-spacing: 0em;
+
+ @include media-M {
+  font-size: 1rem;
+  line-height: 1.625rem;
+ }
+}
+
+@mixin font-s-2 {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 0.875rem;
+ line-height: 1.375rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ @include media-M {
+  font-size: 1rem;
+  line-height: 1.625rem;
+ }
+}
+
+@mixin font-xs {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 0.875rem;
+ line-height: 1.375rem;
+ letter-spacing: 0em;
+}
+
+@mixin font-xs-2 {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 0.875rem;
+ line-height: 1.375rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+
+ //  @include media-M {
+ //   font-size: 0.875rem;
+ //   line-height: 1.375rem;
+ //  }
+}
+
+@mixin font-2xs {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 0.75rem;
+ line-height: 1.125rem;
+ letter-spacing: 0em;
+}
+
+@mixin font-2xs-2 {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 0.75rem;
+ line-height: 1.125rem;
+ letter-spacing: 0em;
+ font-weight: 600;
+}
+
+@mixin font-3xs {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 0.688rem;
+ line-height: 1.063rem;
+ letter-spacing: 0.063em;
+ font-weight: 600;
+ text-transform: uppercase;
+}
+
+@mixin font-4xs {
+ @include fontFix;
+ font-family: $text-font;
+ font-size: 0.5625rem;
+ line-height: 1.063rem;
+ letter-spacing: 0.031em;
+ font-weight: 600;
+ text-transform: uppercase;
+}
