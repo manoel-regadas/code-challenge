@@ -7,6 +7,10 @@
   height: $spc-56;
   z-index: 2;
 
+  &__label {
+    padding-left: 16px;
+  }
+
   &__innerContainer {
     border: 1.5px solid rgb(var(--neu-03));
     border-radius: 30px;

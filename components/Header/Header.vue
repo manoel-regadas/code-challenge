@@ -1,5 +1,5 @@
 <template>
-  <header class="header grid bgColor-neu-11">
+  <header class="header grid">
     <button
       class="header__arrow header__arrow--left"
       title="previous slide"
@@ -25,7 +25,7 @@
     <template v-for="(slide, index) in slides">
       <transition name="picture" :key="index">
         <picture
-          class="header__picture overlay-04"
+          class="header__picture overlay-04 bgColor-neu-11"
           v-if="currentSlide === index + 1"
         >
           <source media="(max-width:1024px)" :srcset="slide.image.narrow" />
@@ -48,9 +48,17 @@
         </div>
       </transition>
     </template>
-    <div class="header__search-container">
-      <search-input :placeholder="'From'" :searchText="'test'" />
-      <search-input :placeholder="'To'" :searchText="'test'" />
+    <div class="header__search-container bgColor-neu-01">
+      <search-input
+        :placeholder="'From'"
+        :searchText="'test'"
+        :label="'Leave from'"
+      />
+      <search-input
+        :placeholder="'To'"
+        :searchText="'test'"
+        :label="'Going to'"
+      />
     </div>
     <button
       class="header__arrow header__arrow--right"

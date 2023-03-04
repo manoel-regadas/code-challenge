@@ -1,5 +1,6 @@
 <template>
   <div class="searchInput">
+    <small class="searchInput__label font-xs color-neu-06" v-text="label" />
     <div
       class="searchInput__innerContainer"
       :class="
@@ -117,6 +118,10 @@ export default {
       required: true,
     },
     searchText: {
+      type: String,
+      required: true,
+    },
+    label: {
       type: String,
       required: true,
     },
