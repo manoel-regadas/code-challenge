@@ -89,7 +89,7 @@
         :placeholder="'To'"
         :searchText="'test'"
         :label="'Going to'"
-        :results="allCodes"
+        :results="!departureCodes ? allCodes : departureCodes"
         @input="(e) => (arrivalInput = e)"
       />
     </div>
@@ -141,13 +141,20 @@ export default {
     },
     scheduleKeys() {
       const codes = CodeMapper(Object.keys(this.apiTest.schedule))
-      console.log(Object.keys(this.apiTest.schedule))
       return codes
     },
   },
   watch: {
     departureInput(newValue, oldValue) {
-      console.log(newValue)
+      const code = newValue.split('-')[1]?.trim()
+      if (code) {
+        this.departureCodes = CodeMapper(
+          Object.keys(this.apiTest.schedule[code])
+        )
+        this.$emit('schedules', this.apiTest.schedule[code])
+      } else {
+        this.departureCodes = this.allCodes
+      }
     },
     arrivalInput(newValue, oldValue) {
       console.log(newValue)

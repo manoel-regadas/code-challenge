@@ -1,16 +1,22 @@
 <template>
-  <Header :slides="slides"></Header>
+  <div>
+    <Header :slides="slides" @schedules="(e) => (schedules = e)"></Header>
+    {{ schedules }}
+    <List :schedules="schedules" />
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import Header from '~/components/Header/Header.vue'
+import List from '~/components/List/List.vue'
 
 export default Vue.extend({
-  components: { Header },
+  components: { Header, List },
   name: 'IndexPage',
   data() {
     return {
+      schedules: {},
       slides: [
         {
           title: 'Get a 3rd Night FREE this spring',

@@ -18,9 +18,8 @@
           name="search"
           :id="id"
           v-model="input"
-          @input="$emit('input', input)"
           :placeholder="placeholder"
-          @keyup.enter="goSearch"
+          @keyup.enter="$emit('input', input)"
           @focus="isInputOpened = true"
         />
         <div class="searchInput__openBtn">
@@ -71,7 +70,10 @@
             :key="index"
             class="searchInput__resultItem"
             role="button"
-            @click="handleListClik(place)"
+            @click="
+              handleListClik(place)
+              $emit('input', input)
+            "
           >
             <p
               class="searchInput__resultInputText"
@@ -149,6 +151,7 @@ export default {
     },
     resetInput() {
       this.input = ''
+      this.$emit('input', this.input)
     },
   },
   computed: {
