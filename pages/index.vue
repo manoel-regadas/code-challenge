@@ -1,10 +1,7 @@
 <template>
   <div>
     <Header :slides="slides" @schedules="(e) => (schedules = e)"></Header>
-    {{ schedules }}
-    <template v-if="schedules.destination">
-      <!-- <List :schedules="schedules.schedule" :origin="schedules.origin" /> -->
-    </template>
+    <List :schedules="schedules" />
   </div>
 </template>
 

@@ -159,7 +159,7 @@ export default {
       } else {
         this.disabeleInputArrival = true
         this.arrivalInput = ''
-        console.log(this.arrivalInput)
+
         this.departureCodes = this.allCodes
         this.$emit('schedules', {
           destination: arrivalCode,
@@ -170,7 +170,7 @@ export default {
     arrivalInput(newValue, oldValue) {
       const arrivalCode = newValue.split('-')[1]?.trim()
       const departureCode = this.departureInput.split('-')[1]?.trim()
-      console.log(departureCode)
+
       if (arrivalCode) {
         this.departureCodes = CodeMapper(
           Object.keys(this.api.schedule[departureCode])
@@ -198,6 +198,7 @@ export default {
         (response) =>
           (this.allCodes = CodeMapper(Object.keys(this.api.schedule)))
       )
+      .catch((err) => console.log(err))
   },
 }
 </script>

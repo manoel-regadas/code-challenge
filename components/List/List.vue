@@ -1,10 +1,13 @@
 <template>
   <section class="list">
-    <div class="list__inner-container grid">
-      <template v-for="(chunk, code) in schedules">
+    <div
+      v-if="!schedules.destination && schedules.origin"
+      class="list__inner-container grid"
+    >
+      <template v-for="(chunk, code) in chunks">
         <div :key="code" class="list__chunks">
           <p class="font-m color-neu-08">
-            From: {{ CodeMapper(origin) }} to
+            From: {{ CodeMapper(schedules.origin) }} to
             <span class="font-m-2">{{ CodeMapper(code) }}:</span>
           </p>
           <Card
@@ -16,6 +19,23 @@
         </div>
       </template>
     </div>
+    <div
+      v-else-if="schedules.destination && schedules.origin"
+      class="list__inner-container grid"
+    >
+      <div class="list__chunks">
+        <p class="font-m color-neu-08">
+          From: {{ CodeMapper(schedules.origin) }} to
+          <span class="font-m-2">{{ CodeMapper(schedules.destination) }}:</span>
+        </p>
+        <Card
+          v-for="(card, index_) in chunks.sailings"
+          :key="index_"
+          v-bind="card"
+          :detination="CodeMapper(schedules.destination)"
+        />
+      </div>
+    </div>
   </section>
 </template>
 <script>
@@ -26,30 +46,36 @@ export default {
   name: 'List',
   components: { Card },
   data() {
-    return { CodeMapper }
+    return {
+      CodeMapper,
+      chunks: '',
+    }
   },
   props: {
     schedules: {
       type: Object,
       required: true,
     },
-    origin: {
-      type: String,
-      required: true,
-    },
   },
   methods: {},
-  watch: {},
-  computed: {},
-  mounted() {
-    axios
-      .get('/api/')
-      .then((response) => (this.api = response.data))
-      .then(
-        (response) =>
-          (this.allCodes = CodeMapper(Object.keys(this.api.schedule)))
-      )
+  watch: {
+    schedules(newValue, oldValue) {
+      console.log(newValue)
+      if (newValue.origin) {
+        axios
+          .get(
+            `/api/${newValue.origin}/${
+              newValue.destination ? newValue.destination + '/' : ''
+            }`
+          )
+          .then((response) => (this.chunks = response.data))
+          .then((response) => console.log(response))
+          .catch((err) => console.log(err))
+      }
+    },
   },
+  computed: {},
+  mounted() {},
 }
 </script>
 <style lang="scss" scoped>
