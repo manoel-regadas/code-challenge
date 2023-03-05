@@ -1,23 +1,29 @@
 <template>
   <div class="searchInput">
-    <small class="searchInput__label font-xs color-neu-06" v-text="label" />
+    <label
+      :for="id"
+      class="searchInput__label font-xs color-neu-08"
+      v-text="label"
+    />
     <div
       class="searchInput__innerContainer"
       :class="
-        input || isInputOnFocus ? 'searchInput__innerContainer--active' : ''
+        input || isInputOpened ? 'searchInput__innerContainer--active' : ''
       "
     >
       <div class="searchInput__inputContainer">
         <input
           type="text"
           class="searchInput__input font-xs"
+          name="search"
+          :id="id"
           v-model="input"
+          @input="$emit('input', input)"
           :placeholder="placeholder"
           @keyup.enter="goSearch"
-          @focus="isInputOnFocus = true"
-          @blur="isInputOnFocus = false"
+          @focus="isInputOpened = true"
         />
-        <button class="searchInput__searchBtn" @click="goSearch">
+        <div class="searchInput__openBtn">
           <svg
             width="24"
             height="24"
@@ -27,37 +33,72 @@
           >
             <path d="M5 8L12 15L19 8" stroke="#070707" stroke-width="2" />
           </svg>
-        </button>
+        </div>
         <button
           v-if="input"
           class="searchInput__searchCancel"
           @click="resetInput()"
         >
-          ❌
+          <svg
+            role="img"
+            aria-describedby="resetInputText"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title id="resetInputText">reset Input Text</title>
+            <path
+              d="M9 15L15 9M15 15L9 9"
+              stroke="#070707"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="#070707"
+              stroke-width="2"
+            />
+          </svg>
         </button>
       </div>
-      <div v-if="isInputOnFocus" class="searchInput__resultsContainer">
+      <div v-if="isInputOpened" class="searchInput__resultsContainer">
         <ul class="searchInput__resultsList">
-          <li class="searchInput__resultItem">
-            <p class="searchInput__resultInputText">
-              <span v-if="input" class="searchInput__resultIcon"> 🔍 </span>
-              <span class="font-xs-2 color-neu-08">{{ input }}</span>
-              <span class="searchInput__resultText font-xs color-neu-08">
-                - {{ searchText }}</span
-              >
-            </p>
-          </li>
           <li
-            v-for="(item, index) in filteredList"
+            v-for="(place, index) in filteredList"
             :key="index"
             class="searchInput__resultItem"
+            role="button"
+            @click="handleListClik(place)"
           >
-            <p class="searchInput__resultInputText">
-              <span v-if="input" class="searchInput__resultIcon"> 🔍 </span>
-              <span
-                class="font-xs color-neu-08"
-                v-html="handleAutocomplete(item.word)"
-              />
+            <p
+              class="searchInput__resultInputText"
+              :class="input ? 'searchInput__resultInputText--searching' : ''"
+            >
+              <span v-if="input" class="searchInput__resultIcon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                    stroke="#070707"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M20 20L16 16"
+                    stroke="#070707"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+              <span class="font-xs color-neu-08" v-html="place" />
             </p>
           </li>
         </ul>
@@ -65,51 +106,16 @@
     </div>
   </div>
 </template>
-<script lang="ts">
+<script>
+import UniqueID from '@/composables/UniqueID'
 export default {
   name: 'SearchInput',
   data() {
     return {
       input: '',
       isInputOnFocus: false,
-      results: [
-        {
-          word: 'Cardiologia',
-          link: 'link01',
-        },
-        {
-          word: 'Cardiologia Pediátrica',
-          link: 'link02',
-        },
-        {
-          word: 'Ritmo Cardíaco',
-          link: 'link03',
-        },
-        {
-          word: 'Eletrocardiograma',
-          link: 'link04',
-        },
-        {
-          word: 'Pacemaker cardíaco',
-          link: 'link05',
-        },
-        {
-          word: 'Pediatria',
-          link: 'link06',
-        },
-        {
-          word: 'Imagiologia',
-          link: 'link07',
-        },
-        {
-          word: 'Orteopedia',
-          link: 'link08',
-        },
-        {
-          word: 'Geriatria',
-          link: 'link09',
-        },
-      ],
+      isInputOpened: false,
+      id: UniqueID().getID(),
     }
   },
   props: {
@@ -125,32 +131,30 @@ export default {
       type: String,
       required: true,
     },
+    results: {
+      type: Array,
+      required: true,
+    },
   },
   methods: {
-    goSearch(): any {
+    goSearch() {
       // if (this.input.length >= 3 && filteredList().length) {
       //   //fazer aqui o redirect para a pagina de search results
       //   alert('Search Results')
       // }
     },
-    handleAutocomplete(w: string): any {
-      let inputLowerCase = this.input.toLocaleLowerCase()
-      let test = w
-        .toLocaleLowerCase()
-        .replace(inputLowerCase, `<b class="font-xs-2">${inputLowerCase}</b>`)
-      return test
+    handleListClik(place) {
+      this.input = place
+      this.isInputOpened = false
     },
-    resetInput(): any {
+    resetInput() {
       this.input = ''
-    },
-    inputFocus(): any {
-      this.isInputOnFocus = true
     },
   },
   computed: {
-    filteredList(): any {
+    filteredList() {
       return this.results.filter((item) =>
-        item.word.toLowerCase().includes(this.input.toLowerCase())
+        item.toLowerCase().includes(this.input.toLowerCase())
       )
     },
   },

@@ -26,7 +26,7 @@
       <template v-for="(slide, index) in slides">
         <transition name="picture" :key="index">
           <picture
-            class="header__picture overlay-04 bgColor-neu-11"
+            class="header__picture overlay-03 bgColor-neu-11"
             v-if="currentSlide === index + 1"
           >
             <source media="(max-width:1024px)" :srcset="slide.image.narrow" />
@@ -72,33 +72,47 @@
       </button>
     </div>
     <div class="header__search-container bgColor-neu-01">
-      <p class="header__search-title font-m-2 color-neu-06">
+      <p class="header__search-title font-m-2 color-neu-08">
         Choose your destination
       </p>
+
       <search-input
         class="header__search-input"
         :placeholder="'From'"
         :searchText="'test'"
         :label="'Leave from'"
+        :results="allCodes"
+        @input="(e) => (departureInput = e)"
       />
       <search-input
         class="header__search-input"
         :placeholder="'To'"
         :searchText="'test'"
         :label="'Going to'"
+        :results="allCodes"
+        @input="(e) => (arrivalInput = e)"
       />
     </div>
   </header>
 </template>
-<script lang="ts">
-import SearchInput from '~/components/DropdownInput/SearchInput.vue'
+<script>
+// @ts-ignore
+import data from '@/static/data.json'
+import CodeMapper from '@/composables/FerriesCodeMapper.ts'
+import SearchInput from '@/components/DropdownInput/SearchInput.vue'
 export default {
   name: 'Header',
   components: { SearchInput },
-  data(): { currentSlide: number; handleInterval: any } {
+  data() {
     return {
       currentSlide: 1,
       handleInterval: null,
+      apiTest: data,
+      allCodes: [],
+      arrivalCodes: [],
+      departureCodes: [],
+      departureInput: '',
+      arrivalInput: '',
     }
   },
   props: {
@@ -125,10 +139,24 @@ export default {
     handleSlider() {
       this.nextSlide()
     },
+    scheduleKeys() {
+      const codes = CodeMapper(Object.keys(this.apiTest.schedule))
+      console.log(Object.keys(this.apiTest.schedule))
+      return codes
+    },
+  },
+  watch: {
+    departureInput(newValue, oldValue) {
+      console.log(newValue)
+    },
+    arrivalInput(newValue, oldValue) {
+      console.log(newValue)
+    },
   },
   computed: {},
   mounted() {
     this.handleInterval = setInterval(this.nextSlide, 8000)
+    this.allCodes = this.scheduleKeys()
   },
 }
 </script>

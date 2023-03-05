@@ -50,10 +50,10 @@
     );
   }
 }
-@mixin overlay-b01 {
+@mixin overlay-01 {
   @include overlay;
   &:after {
-    opacity: 0.4;
+    opacity: 0.1;
     backdrop-filter: blur(10px);
   }
 }

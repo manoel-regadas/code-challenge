@@ -270,11 +270,9 @@ $ALL-COLORS: (
 }
 
 // Overlays
-.overlay-g01 {
-  @include overlay-g01;
-}
-.overlay-b01 {
-  @include overlay-b01;
+
+.overlay-01 {
+  @include overlay-01;
 }
 .overlay-02 {
   @include overlay-02;

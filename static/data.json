@@ -1,0 +1,1661 @@
+{
+  "schedule": {
+    "BOW": {
+      "HSB": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "6:20 am",
+            "arrivalTime": "6:40 am",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:30 am",
+            "arrivalTime": "7:50 am",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:35 am",
+            "arrivalTime": "8:55 am",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:40 am",
+            "arrivalTime": "10:00 am",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:50 am",
+            "arrivalTime": "11:10 am",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "12:00 pm",
+            "arrivalTime": "12:20 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "1:10 pm",
+            "arrivalTime": "1:30 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "2:55 pm",
+            "arrivalTime": "3:15 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "4:00 pm",
+            "arrivalTime": "4:20 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:10 pm",
+            "arrivalTime": "5:30 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:15 pm",
+            "arrivalTime": "6:35 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:25 pm",
+            "arrivalTime": "7:45 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:30 pm",
+            "arrivalTime": "8:50 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:30 pm",
+            "arrivalTime": "9:50 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:30 pm",
+            "arrivalTime": "10:50 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          }
+        ]
+      }
+    },
+    "DUK": {
+      "TSA": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "10:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 48,
+            "carFill": 55,
+            "oversizeFill": 41,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "12:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 62,
+            "carFill": 89,
+            "oversizeFill": 35,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:15 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 68,
+            "carFill": 94,
+            "oversizeFill": 42,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 83,
+            "carFill": 100,
+            "oversizeFill": 66,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:15 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 43,
+            "carFill": 44,
+            "oversizeFill": 41,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 15,
+            "carFill": 11,
+            "oversizeFill": 18,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 37,
+            "carFill": 21,
+            "oversizeFill": 52,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:45 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 28,
+            "carFill": 27,
+            "oversizeFill": 29,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 49,
+            "carFill": 31,
+            "oversizeFill": 67,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          }
+        ]
+      }
+    },
+    "FUL": {
+      "SWB": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "6:15 am",
+            "arrivalTime": "6:50 am",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:50 am",
+            "arrivalTime": "10:25 am",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:50 am",
+            "arrivalTime": "12:25 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "1:50 pm",
+            "arrivalTime": "2:25 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:50 pm",
+            "arrivalTime": "4:25 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:50 pm",
+            "arrivalTime": "6:25 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:50 pm",
+            "arrivalTime": "8:25 pm",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "",
+            "vesselStatus": ""
+          }
+        ]
+      }
+    },
+    "HSB": {
+      "BOW": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "5:50 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:50 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:05 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:25 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "12:35 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "2:20 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:30 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "4:35 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:50 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:50 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:50 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Capilano",
+            "vesselStatus": ""
+          }
+        ]
+      },
+      "LNG": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "7:30 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 13,
+            "carFill": 11,
+            "oversizeFill": 17,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:45 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 17,
+            "carFill": 22,
+            "oversizeFill": 5,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:55 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 20,
+            "carFill": 23,
+            "oversizeFill": 15,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "2:10 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 19,
+            "carFill": 19,
+            "oversizeFill": 20,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "4:20 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 16,
+            "carFill": 13,
+            "oversizeFill": 23,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:30 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 10,
+            "carFill": 7,
+            "oversizeFill": 15,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:50 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 10,
+            "carFill": 11,
+            "oversizeFill": 7,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:55 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 4,
+            "carFill": 1,
+            "oversizeFill": 13,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:30 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 34,
+            "carFill": 16,
+            "oversizeFill": 80,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:45 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 28,
+            "carFill": 14,
+            "oversizeFill": 65,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:55 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 22,
+            "carFill": 11,
+            "oversizeFill": 52,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          }
+        ]
+      },
+      "NAN": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "6:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 15,
+            "carFill": 20,
+            "oversizeFill": 5,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:25 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 34,
+            "carFill": 41,
+            "oversizeFill": 14,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:40 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 39,
+            "carFill": 51,
+            "oversizeFill": 8,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "1:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 43,
+            "carFill": 52,
+            "oversizeFill": 20,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 45,
+            "carFill": 52,
+            "oversizeFill": 27,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:35 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 47,
+            "carFill": 52,
+            "oversizeFill": 34,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:05 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 7,
+            "carFill": 9,
+            "oversizeFill": 2,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:10 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 21,
+            "carFill": 22,
+            "oversizeFill": 20,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 28,
+            "carFill": 20,
+            "oversizeFill": 47,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:25 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 29,
+            "carFill": 25,
+            "oversizeFill": 41,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:40 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 33,
+            "carFill": 39,
+            "oversizeFill": 16,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          }
+        ]
+      }
+    },
+    "LNG": {
+      "HSB": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "6:20 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 3,
+            "carFill": 4,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:40 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 14,
+            "carFill": 19,
+            "oversizeFill": 3,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:50 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 30,
+            "carFill": 36,
+            "oversizeFill": 15,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "1:05 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 42,
+            "carFill": 52,
+            "oversizeFill": 16,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:15 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 38,
+            "carFill": 51,
+            "oversizeFill": 3,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:25 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 37,
+            "carFill": 47,
+            "oversizeFill": 12,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:40 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 32,
+            "carFill": 40,
+            "oversizeFill": 12,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:55 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 22,
+            "carFill": 29,
+            "oversizeFill": 5,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:20 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 13,
+            "carFill": 8,
+            "oversizeFill": 25,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:40 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 27,
+            "carFill": 27,
+            "oversizeFill": 25,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:50 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 21,
+            "carFill": 20,
+            "oversizeFill": 25,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          }
+        ]
+      }
+    },
+    "NAN": {
+      "HSB": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "6:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 17,
+            "carFill": 20,
+            "oversizeFill": 8,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:25 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 32,
+            "carFill": 39,
+            "oversizeFill": 14,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:40 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 43,
+            "carFill": 59,
+            "oversizeFill": 2,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "1:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 51,
+            "carFill": 64,
+            "oversizeFill": 18,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:20 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 54,
+            "carFill": 65,
+            "oversizeFill": 27,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:55 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 54,
+            "carFill": 65,
+            "oversizeFill": 25,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 46,
+            "carFill": 58,
+            "oversizeFill": 14,
+            "vesselName": "Queen of Coquitlam",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:10 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 1,
+            "carFill": 1,
+            "oversizeFill": 0,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 23,
+            "carFill": 25,
+            "oversizeFill": 18,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:25 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 24,
+            "carFill": 31,
+            "oversizeFill": 4,
+            "vesselName": "Queen of Oak Bay",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:40 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 33,
+            "carFill": 41,
+            "oversizeFill": 12,
+            "vesselName": "Queen of Cowichan",
+            "vesselStatus": ""
+          }
+        ]
+      }
+    },
+    "SWB": {
+      "FUL": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "9:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "1:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Skeena Queen",
+            "vesselStatus": ""
+          }
+        ]
+      },
+      "SGI": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "5:45 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Heron",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:25 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Raven",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:35 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Raven",
+            "vesselStatus": ""
+          },
+          {
+            "time": "2:20 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Heron",
+            "vesselStatus": ""
+          },
+          {
+            "time": "2:40 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Raven",
+            "vesselStatus": ""
+          },
+          {
+            "time": "4:10 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Heron",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:35 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Raven",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:25 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Heron",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Heron",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:05 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Raven",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 0,
+            "oversizeFill": 0,
+            "vesselName": "Salish Raven",
+            "vesselStatus": ""
+          }
+        ]
+      },
+      "TSA": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "7:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 51,
+            "carFill": 77,
+            "oversizeFill": 25,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 65,
+            "carFill": 95,
+            "oversizeFill": 35,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 70,
+            "carFill": 100,
+            "oversizeFill": 41,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "12:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 65,
+            "carFill": 100,
+            "oversizeFill": 31,
+            "vesselName": "Coastal Celebration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "1:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 67,
+            "carFill": 100,
+            "oversizeFill": 34,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 52,
+            "carFill": 80,
+            "oversizeFill": 25,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "4:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 67,
+            "carFill": 100,
+            "oversizeFill": 35,
+            "vesselName": "Coastal Celebration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 71,
+            "carFill": 100,
+            "oversizeFill": 43,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 79,
+            "carFill": 100,
+            "oversizeFill": 59,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 58,
+            "carFill": 100,
+            "oversizeFill": 17,
+            "vesselName": "Coastal Celebration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 62,
+            "carFill": 87,
+            "oversizeFill": 37,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 76,
+            "carFill": 90,
+            "oversizeFill": 61,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 82,
+            "carFill": 100,
+            "oversizeFill": 64,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 79,
+            "carFill": 100,
+            "oversizeFill": 58,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          }
+        ]
+      }
+    },
+    "TSA": {
+      "DUK": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "10:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 48,
+            "carFill": 65,
+            "oversizeFill": 33,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          },
+          {
+            "time": "12:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 50,
+            "carFill": 66,
+            "oversizeFill": 33,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:15 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 59,
+            "carFill": 75,
+            "oversizeFill": 43,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 50,
+            "carFill": 62,
+            "oversizeFill": 38,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "8:15 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 54,
+            "carFill": 50,
+            "oversizeFill": 57,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:45 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 12,
+            "carFill": 4,
+            "oversizeFill": 19,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 51,
+            "carFill": 14,
+            "oversizeFill": 87,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:45 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 46,
+            "carFill": 29,
+            "oversizeFill": 64,
+            "vesselName": "Coastal Inspiration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:15 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 57,
+            "carFill": 48,
+            "oversizeFill": 66,
+            "vesselName": "Queen of Alberni",
+            "vesselStatus": ""
+          }
+        ]
+      },
+      "SGI": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "11:10 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 65,
+            "carFill": 100,
+            "oversizeFill": 38,
+            "vesselName": "Salish Eagle",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:40 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 16,
+            "carFill": 35,
+            "oversizeFill": 2,
+            "vesselName": "Salish Eagle",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:05 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 15,
+            "carFill": 35,
+            "oversizeFill": 0,
+            "vesselName": "Salish Eagle",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:55 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 44,
+            "carFill": 91,
+            "oversizeFill": 8,
+            "vesselName": "Salish Eagle",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:10 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 33,
+            "carFill": 66,
+            "oversizeFill": 7,
+            "vesselName": "Salish Eagle",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:55 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 0,
+            "carFill": 5,
+            "oversizeFill": 0,
+            "vesselName": "Salish Eagle",
+            "vesselStatus": ""
+          }
+        ]
+      },
+      "SWB": {
+        "sailingDuration": "",
+        "sailings": [
+          {
+            "time": "7:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 35,
+            "carFill": 45,
+            "oversizeFill": 25,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 55,
+            "carFill": 83,
+            "oversizeFill": 28,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 69,
+            "carFill": 100,
+            "oversizeFill": 38,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "1:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 62,
+            "carFill": 100,
+            "oversizeFill": 25,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "2:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 59,
+            "carFill": 100,
+            "oversizeFill": 21,
+            "vesselName": "Coastal Celebration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "3:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 76,
+            "carFill": 100,
+            "oversizeFill": 53,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "5:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 74,
+            "carFill": 100,
+            "oversizeFill": 49,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "6:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 70,
+            "carFill": 100,
+            "oversizeFill": 40,
+            "vesselName": "Coastal Celebration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 70,
+            "carFill": 100,
+            "oversizeFill": 40,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 62,
+            "carFill": 92,
+            "oversizeFill": 32,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "10:00 PM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 30,
+            "carFill": 54,
+            "oversizeFill": 5,
+            "vesselName": "Coastal Celebration",
+            "vesselStatus": ""
+          },
+          {
+            "time": "7:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 88,
+            "carFill": 82,
+            "oversizeFill": 94,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          },
+          {
+            "time": "9:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 68,
+            "carFill": 71,
+            "oversizeFill": 65,
+            "vesselName": "Spirit of Vancouver Island",
+            "vesselStatus": ""
+          },
+          {
+            "time": "11:00 AM",
+            "arrivalTime": "",
+            "isCancelled": false,
+            "fill": 72,
+            "carFill": 89,
+            "oversizeFill": 54,
+            "vesselName": "Coastal Renaissance",
+            "vesselStatus": ""
+          }
+        ]
+      }
+    }
+  },
+  "scrapedAt": "2023-03-05T10:21:11.978808408Z"
+}
