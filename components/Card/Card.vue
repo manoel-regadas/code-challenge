@@ -1,28 +1,41 @@
 <template>
-  <article class="card">
-    <figure class="card__image">
-      <img :src="image.src" :alt="image.alt" class="ratio-1-1" />
-    </figure>
+  <article class="card bgColor-neu-02">
     <div class="card__content">
-      <div class="card__text">
-        <h5 class="card__detination color-neu-11 font-m-2">
+      <header>
+        <h5 class="card__detination color-m-01 font-m-2">
           {{ detination }}
         </h5>
+        <h6 class="card__info color-neu-11 font-l-2">
+          Vessel: {{ vesselName ? vesselName : '-' }}
+        </h6>
+      </header>
+      <div class="card__text">
+        <p class="card__info color-neu-11 font-m">
+          ArrivalTime: {{ arrivalTime ? arrivalTime : '-' }}
+        </p>
+        <p class="card__info color-neu-11 font-m">
+          Fill: {{ fill ? fill : '-' }}
+        </p>
+        <p class="card__info color-neu-11 font-m">
+          Car Fill: {{ carFill ? carFill : '-' }}
+        </p>
+        <p class="card__info color-neu-11 font-m">
+          Oversize Fill: {{ oversizeFill ? oversizeFill : '-' }}
+        </p>
+        <p class="card__info color-neu-11 font-m">
+          Vessel Status: {{ vesselStatus ? vesselStatus : '-' }}
+        </p>
       </div>
     </div>
   </article>
 </template>
 <script>
 export default {
-  name: 'List',
+  name: 'Card',
   data() {
     return {}
   },
   props: {
-    image: {
-      type: Object,
-      required: true,
-    },
     detination: {
       type: String,
       required: true,
@@ -55,8 +68,8 @@ export default {
       type: String,
       required: true,
     },
-    buttons: {
-      type: Array,
+    oversizeFill: {
+      type: Number,
       required: true,
     },
   },

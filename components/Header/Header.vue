@@ -89,7 +89,8 @@
         :placeholder="'To'"
         :searchText="'test'"
         :label="'Going to'"
-        :results="!departureCodes ? allCodes : departureCodes"
+        :results="!departureCodes.length ? allCodes : departureCodes"
+        :disable="disabeleInputArrival"
         @input="(e) => (arrivalInput = e)"
       />
     </div>
@@ -97,9 +98,9 @@
 </template>
 <script>
 // @ts-ignore
-import data from '@/static/data.json'
 import CodeMapper from '@/composables/FerriesCodeMapper.ts'
 import SearchInput from '@/components/DropdownInput/SearchInput.vue'
+import axios from 'axios'
 export default {
   name: 'Header',
   components: { SearchInput },
@@ -107,12 +108,14 @@ export default {
     return {
       currentSlide: 1,
       handleInterval: null,
-      apiTest: data,
+      api: {},
       allCodes: [],
       arrivalCodes: [],
       departureCodes: [],
       departureInput: '',
       arrivalInput: '',
+      mountains: '',
+      disabeleInputArrival: true,
     }
   },
   props: {
@@ -139,31 +142,62 @@ export default {
     handleSlider() {
       this.nextSlide()
     },
-    scheduleKeys() {
-      const codes = CodeMapper(Object.keys(this.apiTest.schedule))
-      return codes
-    },
   },
   watch: {
     departureInput(newValue, oldValue) {
-      const code = newValue.split('-')[1]?.trim()
-      if (code) {
+      const departureCode = newValue.split('-')[1]?.trim()
+      const arrivalCode = this.arrivalInput.split('-')[1]?.trim()
+      if (departureCode) {
+        this.disabeleInputArrival = false
         this.departureCodes = CodeMapper(
-          Object.keys(this.apiTest.schedule[code])
+          Object.keys(this.api.schedule[departureCode])
         )
-        this.$emit('schedules', this.apiTest.schedule[code])
+        this.$emit('schedules', {
+          destination: arrivalCode ? arrivalCode : '',
+          origin: departureCode ? departureCode : '',
+        })
       } else {
+        this.disabeleInputArrival = true
+        this.arrivalInput = ''
+        console.log(this.arrivalInput)
         this.departureCodes = this.allCodes
+        this.$emit('schedules', {
+          destination: arrivalCode,
+          origin: departureCode,
+        })
       }
     },
     arrivalInput(newValue, oldValue) {
-      console.log(newValue)
+      const arrivalCode = newValue.split('-')[1]?.trim()
+      const departureCode = this.departureInput.split('-')[1]?.trim()
+      console.log(departureCode)
+      if (arrivalCode) {
+        this.departureCodes = CodeMapper(
+          Object.keys(this.api.schedule[departureCode])
+        )
+        this.$emit('schedules', {
+          destination: arrivalCode ? arrivalCode : '',
+          origin: departureCode ? departureCode : '',
+        })
+      } else {
+        this.departureCodes = this.allCodes
+        this.$emit('schedules', {
+          destination: arrivalCode ? arrivalCode : '',
+          origin: departureCode ? departureCode : '',
+        })
+      }
     },
   },
   computed: {},
   mounted() {
     this.handleInterval = setInterval(this.nextSlide, 8000)
-    this.allCodes = this.scheduleKeys()
+    axios
+      .get('/api/')
+      .then((response) => (this.api = response.data))
+      .then(
+        (response) =>
+          (this.allCodes = CodeMapper(Object.keys(this.api.schedule)))
+      )
   },
 }
 </script>

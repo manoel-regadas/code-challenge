@@ -1,5 +1,5 @@
 <template>
-  <div class="searchInput">
+  <div class="searchInput" :class="disable ? 'searchInput--disable' : ''">
     <label
       :for="id"
       class="searchInput__label font-xs color-neu-08"
@@ -137,6 +137,11 @@ export default {
       type: Array,
       required: true,
     },
+    disable: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   },
   methods: {
     goSearch() {
@@ -159,6 +164,11 @@ export default {
       return this.results.filter((item) =>
         item.toLowerCase().includes(this.input.toLowerCase())
       )
+    },
+  },
+  watch: {
+    disable(newValue, oldValue) {
+      if (newValue) this.input = ''
     },
   },
 }

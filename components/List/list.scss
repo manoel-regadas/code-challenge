@@ -1,5 +1,27 @@
 @use 'style/index' as *;
 
-.header {
+.list {
   $this: &;
+  padding: $spc-32 0;
+
+  &__inner-container {
+    //row-gap: $spc-32;
+  }
+  &__chunks {
+    margin-bottom: $spc-16;
+    padding-bottom: $spc-16;
+    grid-column: 1/-1;
+    display: flex;
+    border-bottom: solid 1px rgb(var(--neu-06));
+
+    @include media-M {
+      grid-column: 3/11;
+    }
+  }
+
+  &__chunks {
+    display: flex;
+    flex-direction: column;
+    gap: $spc-16;
+  }
 }

@@ -7,6 +7,16 @@
   height: 80px;
   z-index: 2;
 
+  &--disable {
+    pointer-events: none;
+    filter: grayscale(1);
+    opacity: 0.5;
+
+    #{$this}__input {
+      background-color: rgb(var(--neu-03));
+    }
+  }
+
   &__label {
     padding-left: 8px;
   }
