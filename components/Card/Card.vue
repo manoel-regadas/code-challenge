@@ -1,5 +1,11 @@
 <template>
-  <article class="card bgColor-neu-02">
+  <article
+    class="card bgColor-neu-02"
+    :class="isCancelled ? 'card--disable' : ''"
+  >
+    <p v-if="isCancelled" class="card__cancelled color-not-03 font-m-2">
+      Cancelled
+    </p>
     <div class="card__content">
       <header>
         <h5 class="card__detination color-m-01 font-m-2">
