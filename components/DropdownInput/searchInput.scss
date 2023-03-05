@@ -4,16 +4,16 @@
   $this: &;
   max-width: 847px;
   width: 100%;
-  height: $spc-56;
+  height: 80px;
   z-index: 2;
 
   &__label {
-    padding-left: 16px;
+    padding-left: 8px;
   }
 
   &__innerContainer {
     border: 1.5px solid rgb(var(--neu-03));
-    border-radius: 30px;
+    border-radius: 12px;
     overflow: hidden;
     &--active {
       background-color: rgb(var(--neu-02));
@@ -41,7 +41,7 @@
 
   &__searchBtn {
     position: absolute;
-    right: 0;
+    right: 16px;
   }
 
   &__searchCancel {

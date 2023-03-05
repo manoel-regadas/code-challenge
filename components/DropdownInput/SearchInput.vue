@@ -36,7 +36,7 @@
           ❌
         </button>
       </div>
-      <div v-if="input" class="searchInput__resultsContainer">
+      <div v-if="isInputOnFocus" class="searchInput__resultsContainer">
         <ul class="searchInput__resultsList">
           <li class="searchInput__resultItem">
             <p class="searchInput__resultInputText">
