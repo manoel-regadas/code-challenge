@@ -60,7 +60,6 @@ export default {
   methods: {},
   watch: {
     schedules(newValue, oldValue) {
-      console.log(newValue)
       if (newValue.origin) {
         axios
           .get(
@@ -69,7 +68,6 @@ export default {
             }`
           )
           .then((response) => (this.chunks = response.data))
-          .then((response) => console.log(response))
           .catch((err) => console.log(err))
       }
     },

@@ -193,10 +193,7 @@ export default {
     axios
       .get('/api/')
       .then((response) => (this.api = response.data))
-      .then(
-        (response) =>
-          (this.allCodes = CodeMapper(Object.keys(this.api.schedule)))
-      )
+      .then(() => (this.allCodes = CodeMapper(Object.keys(this.api.schedule))))
       .catch((err) => console.log(err))
   },
 }
