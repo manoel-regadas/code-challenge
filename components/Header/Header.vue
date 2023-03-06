@@ -72,7 +72,7 @@
       </button>
     </div>
     <div class="header__search-container bgColor-neu-01">
-      <p class="header__search-title font-m-2 color-not-01">
+      <p class="header__search-title font-m-2 color-neu-08">
         Choose your destination
       </p>
 
