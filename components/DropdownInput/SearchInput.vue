@@ -25,6 +25,8 @@
           :placeholder="placeholder"
           @keyup.enter="$emit('input', input)"
           @focus="isInputOpened = true"
+          :readonly="disable"
+          :tabindex="disable ? -1 : ''"
         />
         <div class="searchInput__openBtn">
           <svg
@@ -67,14 +69,23 @@
           </svg>
         </button>
       </div>
-      <div v-if="isInputOpened" class="searchInput__resultsContainer">
+      <div
+        v-show="isInputOpened"
+        :aria-hidden="!isInputOpened"
+        class="searchInput__resultsContainer"
+      >
         <ul class="searchInput__resultsList">
           <li
+            tabindex="0"
             v-for="(place, index) in filteredList"
             :key="index"
             class="searchInput__resultItem"
             role="button"
             @click="
+              handleListClik(place)
+              $emit('input', input)
+            "
+            @keyup.enter="
               handleListClik(place)
               $emit('input', input)
             "
