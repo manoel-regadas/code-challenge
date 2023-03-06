@@ -1,5 +1,9 @@
 <template>
-  <div class="searchInput" :class="disable ? 'searchInput--disable' : ''">
+  <div
+    class="searchInput"
+    :class="disable ? 'searchInput--disable' : ''"
+    v-click-outside="hello"
+  >
     <label
       :for="id"
       class="searchInput__label font-xs color-neu-08"
@@ -109,6 +113,7 @@
   </div>
 </template>
 <script>
+import ClickOutside from 'vue-click-outside'
 import UniqueID from '@/composables/UniqueID'
 export default {
   name: 'SearchInput',
@@ -144,11 +149,8 @@ export default {
     },
   },
   methods: {
-    goSearch() {
-      // if (this.input.length >= 3 && filteredList().length) {
-      //   //fazer aqui o redirect para a pagina de search results
-      //   alert('Search Results')
-      // }
+    hello() {
+      this.isInputOpened = false
     },
     handleListClik(place) {
       this.input = place
@@ -170,6 +172,9 @@ export default {
     disable(newValue, oldValue) {
       if (newValue) this.input = ''
     },
+  },
+  directives: {
+    ClickOutside,
   },
 }
 </script>

@@ -97,7 +97,6 @@
   </header>
 </template>
 <script>
-// @ts-ignore
 import CodeMapper from '@/composables/FerriesCodeMapper.ts'
 import SearchInput from '@/components/DropdownInput/SearchInput.vue'
 import axios from 'axios'

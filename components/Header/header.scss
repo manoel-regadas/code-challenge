@@ -58,7 +58,10 @@
     //padding-bottom: 50px;
 
     @include media-M {
-      grid-column: 2/8;
+      grid-column: 2/9;
+    }
+    @include media-XXL {
+      grid-column: 3/9;
     }
   }
 
@@ -115,24 +118,29 @@
     z-index: 1;
     grid-row: 1/-1;
     align-self: center;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
     background-color: rgb(var(--neu-01));
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
     cursor: pointer;
     z-index: 2;
+    align-self: flex-end;
+    bottom: 25%;
 
     @include media-M {
+      height: 50px;
+      width: 50px;
+      align-self: center;
       display: block;
+      bottom: initial;
     }
 
     &--right {
-      grid-column: 6;
       justify-self: flex-end;
+      grid-column: 6;
 
       @include media-M {
         grid-column: 12;
@@ -143,8 +151,13 @@
       }
     }
     &--left {
-      justify-self: flex-start;
-      grid-column: 1;
+      justify-self: flex-end;
+      grid-column: 5;
+
+      @include media-M {
+        justify-self: flex-start;
+        grid-column: 1;
+      }
 
       @include media-XXL {
         justify-self: flex-end;
